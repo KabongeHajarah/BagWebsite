@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Bella's Elegant Bags</title>
     <link href="styles.css" rel="stylesheet">
+    <link href="mediaQuerries.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -19,14 +21,19 @@
 <nav>
 
 
-<ul class="navs">
-<li>Home</li>
+<ul  id="side-menu">
+<li> <a href="#">Home</a></li>
 <li><a href="AboutUs.html"> About us</a></li>
-<li> Explore</li>
+<li><a href="Explore.html">Explore</a> </li>
 <li><a href="login.html" class="links">Login </a > </li>
-    <li> <ion-icon name="cart-outline" class="cart"></ion-icon> </li>
+    <li> <ion-icon name="cart-outline" id="cart"></ion-icon> </li>
 
-</ul>
+
+<ion-icon name="close-circle-outline" class="menubar" onclick="closemenu()"></ion-icon>
+
+    </ul>
+
+    <ion-icon name="menu-outline" class="menubar" onclick="openmenu()"></ion-icon>
 
 
 </nav>
@@ -54,49 +61,189 @@ trigger="hover"class="searchs">
             </div>
         
           
-    <!-- <div class="img1">
-        <img src="images/bagnew.jpg" class="image"> 
-        <input type="text" class="search" placeholder="Search for bags">
-     </div> -->
+   
     
 </div>
-
+<div id="categories">
 <h3>More like this</h3>
 
 <div class="second-div">
-<div><img src="images/bag3.jpg" alt="bag"></div>
-<div><img src="images/bag4.jpg" alt=""></div>
-<div><img src="images/bag12.jpg" alt=""></div>
+<div>
+    <div> <img src="images/bag3.jpg" alt="bag">
 
-<div><img src="images/bag7.jpg" alt=""></div>
+        <h2 id="item-name">Designer Black Bag</h2>
+        <p id="item-price">$696</p>
+        <img src="images/rating.png" class="rating" alt="rating"><br>
+        <button class="Add-2Chart"> Add to Cart</button>
+    </div>
+
 </div>
+<div>
+    <div>
+    <img src="images/bag4.jpg" alt="">
+    <h2 id="item-name">Elegant</h2>
+    <p id="item-price"> $696</p>
+    <img src="images/rating.png" class="rating" alt="rating"><br>
+    <button class="Add-2Chart"> Add to Cart   </button>
+
+</div>
+</div>
+<div> 
+    <div>
+    <img src="images/bag12.jpg" alt="">
+    <h2 id="item-name">Rock</h2>
+    <p id="item-price"> $400</p>
+    <img src="images/rating.png" class="rating" alt="rating"><br>
+    <button class="Add-2Chart"> Add to Cart </button>
+</div>
+</div>
+
+<div>
+    <div>
+        <img src="images/bag7.jpg" alt="">
+    
+        <h2 id="item-name">Girl Boss</h2>
+        <p id="item-price">$500</p>
+        <img src="images/rating.png" class="rating" alt="rating"><br>
+        <button class="Add-2Chart"> Add to Cart </button>
+    </div>
+</div>
+</div>
+
 <div class="third-div">
-<div><img src="images/bag8.jpg" alt="bag"></div>
-<div><img src="images/bag15.jpg" alt="bag"></div>
-<div><img src="images/bag2.jpg" alt="bag"></div>
-<div><img src="images/bag11.jpg" alt="bag"></div>
+    <div>
+<div><img src="images/bag8.jpg" alt="bag">
+    <h2 id="item-name">Girl Pouch</h2>
+    <p id="item-price">$300</p>
+    <img src="images/rating.png" class="rating" alt="rating"><br>
+    <button class="Add-2Chart"> Add to Cart</button>
+</div>
+</div>
+<div>
+    <div><img src="images/bag15.jpg" alt="bag">
+        <h2 id="item-name">Top Handle</h2>
+        <p id="item-price">$350</p>
+        <img src="images/rating.png" class="rating" alt="rating"><br>
+        <button class="Add-2Chart"> Add to Cart </button>
+        </div>
+    </div>
+<div>
+    
+    <div>
+    <img src="images/bag2.jpg" alt="bag">
+    <h2 id="item-name">Red glimpse</h2>
+    <p id="item-price">$430</p>
+    <img src="images/rating.png" class="rating" alt="rating"><br>
+    <button class="Add-2Chart"> Add to Cart</button>
+</div>
+</div>
+<div>
+    <div>
+    
+    <img src="images/bag11.jpg" alt="bag">
+    <h2 id="item-name">Sweet Maroon</h2>
+    <p id="item-price">$390</p>
+    <img src="images/rating.png" class="rating" alt="rating"><br>
+    <button class="Add-2Chart"> Add to Cart</button>
+</div>
+</div>
 
 </div>
 <div class="forth-div">
-    <div><img src="images/bag9.jpg" alt="bag"></div>
-    <div><img src="images/bag16.jpg" alt="bag"></div>
-    <div><img src="images/bag14.jpg" alt="bag"></div>
+    <div>
+        <div>
+        <img src="images/bag9.jpg" alt="bag">
+        <h2 id="item-name">Baby Blue</h2>
+        <p id="item-price">$200</p>
+        <img src="images/rating.png" class="rating" alt="rating"><br>
+        <button class="Add-2Chart"> Add to Cart </button>
+    
+    </div>
+    </div>
+    <div>
+        <div>
+        <img src="images/bag16.jpg" alt="bag">
+    
+        <h2 id="item-name">Gilter black</h2>
+        <p id="item-price">$300</p>
+        <img src="images/rating.png" class="rating" alt="rating"><br>
+        <button class="Add-2Chart"> Add to Cart</button>
+    </div>
+    </div>
+    <div>
+        <div>
+        <img src="images/bag14.jpg" alt="bag">
+        <h2 id="item-name">White shoulder Bag</h2>
+        <p id="item-price">$150</p>
+        <img src="images/rating.png" class="rating" alt="rating"><br>
+        <button class="Add-2Chart"> Add to Cart </button>
+    
+   </div>
+    </div>
 
 
 
 
 
-<div><img src="images/bag6.jpg" alt="bag"></div>
+<div>
+    <div>
+    <img src="images/bag6.jpg" alt="bag">
+    <h2 id="item-name">Brown leather</h2>
+    <p id="item-price">$300</p>
+    <img src="images/rating.png" class="rating" alt="rating"><br>
+    <button class="Add-2Chart"> Add to Cart </button>
+    </div>
+</div>
 
 </div>
 <div class="forth-div">
-    <div><img src="images/bag0.jpg" alt="bag"></div>
-<div><img src="images/newbag.jpg" alt="bag"></div>
-<div><img src="images/bag13.jpg" alt="bag"></div>
+    <div>
+       <div>
+        <img src="images/bag0.jpg" alt="bag">
+    
+        <h2 id="item-name">Cut Designer bag</h2>
+        <p id="item-price">$100</p>
+        <img src="images/rating.png" class="rating" alt="rating"><br>
+        <button class="Add-2Chart"> Add to Cart</button>
+    </div>
+    
+    </div>
 
-<div><img src="images/bag5.jpg" alt="bag"></div>
+<div>
+    <div>
+    
+    <img src="images/newbag.jpg" alt="bag">
+    <h2 id="item-name">Tiny clutch</h2>
+    <p id="item-price">$70</p>
+    <img src="images/rating.png" class="rating" alt="rating"><br>
+    <button class="Add-2Chart"> Add to Cart</button>
+    </div>
 
 
+</div>
+<div>
+    <div>
+    <img src="images/bag13.jpg" alt="bag">
+    <h2 id="item-name">Handle bag</h2>
+    <p id="item-price">$128.2</p>
+    <img src="images/rating.png" class="rating" alt="rating"><br>
+    <button class="Add-2Chart"> Add to Cart </button>
+    </div>
+</div>
+
+<div>
+    <div>
+    <img src="images/bag5.jpg" alt="bag">
+
+    <h2 id="item-name">Hot pintch</h2>
+    <p id="item-price">$80</p>
+    <img src="images/rating.png" class="rating" alt="rating"><br>
+    <button class="Add-2Chart"> Add to Cart </button>
+    </div>
+</div>
+
+
+</div>
 </div>
 
 
@@ -108,34 +255,40 @@ trigger="hover"class="searchs">
     <div>
       
     <h3 class="only">ELLAH <ion-icon name="bag-outline"></ion-icon></h3><br> 
-    <p>kabongehajarah@gmail.com
-
+    <p><ion-icon name="location-outline"></ion-icon> Location</p>
+    <p><ion-icon name="call-outline"></ion-icon> Call us +256478150769</p>
+    
+    <p><ion-icon name="mail-outline"></ion-icon>kabongehajarah@gmail.com
+    
     </p> <br>
     <ion-icon name="logo-facebook" class="fb"></ion-icon>
     <ion-icon name="logo-instagram"class="insta"></ion-icon>
     <ion-icon name="logo-twitter" class="twitter"></ion-icon>
     </div>
-    <div>
-      <h3>LEARN MORE</h3><br>
+    <div class="Products">
+      <h3>PRODUCTS</h3><br>
       <ul class="aligntext">
-        <li class="lists">Sucess Stories</li> <br><br>
-    <li class="lists">Why us</li> <br><br>
-    <li class="lists">How it works</li> <br><br>
-    <li class="lists">FAQs </li> <br>
-   
+        <li class="lists">Prices drop</li> <br><br>
+    <li class="lists">New products</li> <br><br>
+    <li class="lists">Best sales</li> <br><br>
+    <li class="lists">Contact us </li> <br>
+    <li class="lists">Sitemap </li> <br>
+    
+    
     </div>
-    <div>
-      <h3>RESOURCES </h3><br>
+    <div class="OurCompany">
+      <h3>OUR COMPANY </h3><br>
       <ul class="aligntext">
-    <li class="lists">Help center</li> <br> <br>
-    <li class="lists"> Blog</li> <br>  <br>
-
-    <li class="lists">About Us</li></ul>
-    <br>
+    <li class="lists">Delivery</li> <br> <br>
+    <li class="lists">Legal Notice</li> <br>  <br>
+    <li class="lists"> Terms and conditions of use</li> <br>  <br>
+    <li class="lists"><a href="AboutUs.html">About Us</a></li></ul> <br> <br>
+    
     </div>
     
     </footer>
 
+    <script src="./Bag.js"></script>
 
 
 

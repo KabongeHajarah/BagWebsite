@@ -1,0 +1,56 @@
+@media (max-width:600px){
+    .start{
+     display: flex;
+     flex-direction: column;
+    }
+    body{
+     overflow-x: hidden;
+    }
+    .start{
+     overflow-x: hidden;
+    }
+
+
+ }
+ @media only screen and (max-width:600px){
+    .headerText{
+        font-size:16px;
+        margin-top: 100%;
+
+    }
+    *{
+        overflow-x: hidden;
+    }
+
+.menubar{
+    display: block;
+    font-size: 25px;
+    color: #520404;
+}
+nav ul{
+background: #be6c87a3;
+position: fixed;
+top: 0;
+right: -200px;
+width: 200px;
+height:100vh;
+padding-top:50px;
+z-index: 2;
+transition: right 0.5s;
+
+
+}
+
+nav ul li  {
+    
+    display: block;
+    margin:25px;
+} 
+nav ul .menubar{
+    position: absolute;
+  
+    top: 25px;
+    left:25px;
+    cursor: pointer;
+}
+ }

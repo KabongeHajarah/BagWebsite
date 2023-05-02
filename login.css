@@ -1,47 +1,59 @@
 *{
    margin: 0%; 
    padding: 0%;
-   box-sizing: border-box;
+   /* box-sizing: border-box; */
 }
 
 
 body{
-    background: url(pics/view.jpg);
+    background: url(images/black-top-handle-bag.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     background-blend-mode: darken;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.8);
-
+    margin: 0%;
+    padding: 0%;
     font-family: 'Roboto', sans-serif;
+
+}
+header{
+position: relative;
+color: black;
 
 }
 h1,p{
 color: #dbd9d9;
 }
-
+nav a, header {
+    color: black;
+}
+.center ion-icon{
+    color: rgb(197, 68, 117);
+}
 .form{
-   
-    margin-top: 100px;
-    margin-left: 30%;
-    margin-right: 30%;
-   
+    margin-top:50px ;
     padding: 0%;
     cursor: pointer;
-   
-
-   
+    
 }
 form{
     background-color: rgba(70, 69, 69, 0.292);
- margin:0% ;
+   margin:0 auto;
    height:450px ;
-   width: 350px;
+   width: 500px;
    padding-left: 20px;
    padding-right: 20px;
   
 
+}
+.center{
+margin-left:110px ;
+
+}
+a{
+    color: #f8f8f8;
 }
 .user{
    color: rgb(10, 9, 10);
@@ -77,7 +89,16 @@ input{
     background-color: rgb(216, 77, 105);
     color: white;
     font-weight: bold;
+    margin: 0px 0px 10px 5px;
 }
 .linkthis{
     color: rgb(76, 146, 189);
+}
+.footermain{
+margin: 30px 0px 10px 0px;
+padding: 20px;
+
+}
+ a .linkthis{
+    color: rgb(11, 11, 244);
 }

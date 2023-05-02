@@ -75,7 +75,7 @@ header{
 
 
    }
-   .sixth-Div{
+   .allclients{
     display: grid;
     grid-auto-flow: column;
     align-items: center;
@@ -83,9 +83,9 @@ header{
     gap: 30px;
     
     }
-    .sixth-Div img{
-        width: 30%;
-        height: 50%;
+    .allclients img{
+        width: 40%;
+        height: 40%;
         margin-bottom: 10px;
         border: transparent  solid;
         border-radius: 57%;
@@ -93,7 +93,50 @@ header{
     
     
     }
-    
+    .ourTeam{
+        display: grid;
+        grid-auto-flow: column;
+    }
+    .ourTeam img{
+width:350px;
+height: 80%;
+border-radius: 10px;
+
+    }
+
+    .footermain{
+        background-color: #f8f8f8;
+        color:  black;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        font-weight: bold;
+        margin-top: 5%;
+        
+        }
+        .only{
+            font-weight: lighter ;
+            color:  black;
+            text-align: center;
+           }
+           
+         
+           .lists{
+             color: black;
+             font-weight: lighter;
+           }
+    .insta{
+        color: rgba(220, 7, 75, 0.517);
+        font-size:30px ;
+    }
+    .fb{
+        color:  #385898;;
+        font-size: 30px;
+    }
+    .twitter{
+        font-size: 30px;
+        color: rgb(29, 155, 240);
+    }
     
     
     

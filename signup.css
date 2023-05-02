@@ -1,0 +1,73 @@
+header{
+
+    position: relative;
+}
+body{
+
+    background: url(images/black-top-handle-bag.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 0%;
+    padding: 0%;
+
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;;
+}
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+    width: 300px;
+    font-size: 16px;
+    cursor: pointer;
+}
+input[type="submit"] {
+    background-color: #dd4589;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+    background-color: #2E8B57;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    width: 300px;
+}
+.already{
+    color: #fff;
+    text-align: center;
+
+}
+.sign{
+    color: blue;
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+.footermain{
+margin: 20px 0px 10px 0px;
+}

@@ -28,13 +28,39 @@ header{
     max-width: 100%;
     width: 100%;
     cursor: pointer;
-    
 
+    }
+    .side-menu,li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 80px;
+        color: rgb(19, 17, 17);
+        font-weight: bold;
+        
+    
+        justify-content: space-between;
+      
+        }
+    nav ul li a::after{
+        content: '';
+        width:0%;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom:-6px;
+        transition: 0.6s;
+    }
+    nav ul li a:hover::after{
+        width:100%;
     }
     .search-icon{
    width:200px ;
   
   
+    }
+    nav ul li a {
+        position: relative;
     }
     
     h1{
@@ -42,22 +68,15 @@ header{
         padding-top: 10px;
     }
     nav{
-     
         justify-content: space-between;
     }
-   
-    
-    .navs,li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 80px;
-    color: rgb(19, 17, 17);
-    font-weight: bold;
-    
-
-    justify-content: space-between;
-  
+    ul li a{
+        position: relative;
     }
+    .menubar {
+        display: none;
+    }
+   
     .logo{
         width: 10%;
         height: 20%;
@@ -141,9 +160,6 @@ max-width: 100%;
     }
 .img1{
 width:100%;
-
-
-
 }
 
 .search:hover{
@@ -162,26 +178,59 @@ animation-fill-mode:forwards;
         display: grid;
        grid-auto-flow: column;
        gap: 10px;
+       justify-content:space-around ;
        margin-top: 10px;
     }
-    .second-div img,.third-div img,.forth-div img{
-        width: 100%;
-        height: 100%;
-
-
-    }
+    
     .words{
         width: 1000px;
         background-color:rgba(232, 231, 231, 0.34) ;
         height:auto;
-    }.footermain{
+       
+    }
+    #categories{
+
+        margin: 0px 10px 0px 10px; 
+    }
+     #categories .rating{
+        width: 100px;
+        align-items: center;
+        height: 50px;
+        text-align: center;
+         
+        }
+    
+    #categories button{
+      background-color: #9d294e;
+      border: none;
+      width: 100px;
+      height: 40px;
+      color: #f8f8f8;
+      cursor: pointer;
+
+    }
+    #categories button:hover{
+background-color: #502939;
+    }
+    #categories h2{
+    margin: 0px;
+
+    }
+    
+    #categories img{
+   height: 320px;
+   width: 100%;
+
+    }
+    .footermain{
         background-color: #f8f8f8;
         color:  black;
         justify-content: space-between;
         display: flex;
         flex-direction: row;
         font-weight: bold;
-        margin-top: 5%;
+        margin: 100px 0px 100px 0px;
+        padding: 20px;
         
         }
         .only{
@@ -207,18 +256,12 @@ animation-fill-mode:forwards;
         font-size: 30px;
         color: rgb(29, 155, 240);
     }
+.footermain h3{
+text-align:left;
 
-    @media (max-width:600px){
-       .start{
-        display: flex;
-        flex-direction: column;
-       }
-       body{
-        overflow-x: hidden;
-       }
-       .start{
-        overflow-x: hidden;
-       }
+}
+  .OurCompany h3{
+    margin-right: 100px;
+ }
 
-
-    }
+  
